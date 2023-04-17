@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.List;
 import java.util.ArrayList;
-
 public class Books extends Library {
     private String bookName;
     private String authorName;
@@ -37,8 +36,7 @@ public class Books extends Library {
     }
 
     public String toString() {
-        return "Book Name: " + this.bookName + ", Author Name:" + this.authorName + ", Publication Year: " + this.publicationYear + ", Available Status: " + isAvailable();
-//        return this.bookName + "," + this.authorName + "," + this.publicationYear + "," + isAvailable();
+        return "Book Name: " + this.bookName + ", Author Name: " + this.authorName + ", Publication Year: " + this.publicationYear + ", Available Status: " + isAvailable();
     }
 
 

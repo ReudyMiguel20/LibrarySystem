@@ -2,7 +2,6 @@ package org.example;
 
 
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         // Initializing variables and objects.
@@ -11,7 +10,6 @@ public class Main {
         UserInterface UI = new UserInterface();
 
         UI.startUI(oceanLibrary, scanner);
-
 
     }
 

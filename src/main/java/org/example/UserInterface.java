@@ -1,8 +1,6 @@
 package org.example;
 
 import java.util.Scanner;
-import java.io.*;
-import java.util.*;
 
 public class UserInterface extends Library {
 
@@ -17,7 +15,7 @@ public class UserInterface extends Library {
         System.out.println("Library System EZPZ v0.3");
 
         while (true) {
-            System.out.println("*- Command List -*");
+            System.out.println("Command List");
             System.out.println("1 - Add Book");
             System.out.println("2 - Delete Book");
             System.out.println("3 - Search Book");
@@ -25,7 +23,6 @@ public class UserInterface extends Library {
             System.out.println("5 - Return Book");
             System.out.println("6 - Display");
             System.out.println("7 - User Management");
-            System.out.println("8 - Save or Load Books");
 
             stringInput = scanner.nextLine();
 
@@ -39,7 +36,7 @@ public class UserInterface extends Library {
                 String createBook = scanner.nextLine();
 
                 //Splitting the input and then converting the last input that is the year to integer
-                String[] createBookDetails = createBook.split(", ");
+                String[] createBookDetails = createBook.split(",");
                 String year = createBookDetails[2].trim();
                 int yearBook = Integer.parseInt(year);
 
@@ -103,13 +100,6 @@ public class UserInterface extends Library {
                     }
                 }
 
-            } else if (stringInput.equals("8")) {
-                System.out.println("Would you like to Save or Load");
-                stringInput = scanner.nextLine();
-
-                if (stringInput.equals("save")) {
-                    saveBooks();
-                }
             }
         }
     }
